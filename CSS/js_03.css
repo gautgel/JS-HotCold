@@ -1,0 +1,139 @@
+body{
+    background-color: rgb(70, 52, 230);
+    margin: 0;
+    padding: 0;
+}
+
+.grid{
+    width:100vw;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 15% 45% 45%;
+}
+
+.titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    border: 2px solid rgb(188, 193, 221);
+    background-color: beige;
+    color: rgb(167, 37, 37);
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 3vmin;
+}
+
+.jeuExplicatif{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    grid-column: 1/2;
+    grid-row: 2/4;
+    background-color: aliceblue;
+    border:2px solid rgb(188, 193, 221);
+}
+
+#number{
+    height:10vmin;
+    width:12vmin;
+    font-size:10vmin;
+}
+
+.bouton{
+    height: 3vmin;
+    width: 15vmin;
+    color: brown;
+    background-color: rgb(36, 47, 160);
+    border: 1px solid black;
+}
+
+.bouton:hover{
+    background-color: brown;
+    border:1px solid black;
+    color: rgb(36, 47, 160);
+}
+
+.hotOrCold{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    border: 2px solid rgb(188, 193, 221);
+    background-color: rgb(155, 34, 34);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 5vmin;
+}
+.gagne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    font-size: 5vmin;
+    animation: victoire 0.4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    background-image: url("../image/fireworks.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(45, 214, 56);
+    color: blue;
+}
+.perdu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    font-size: 5vmin;
+    animation: defaite 0.4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    background-image: url("../image/unhappy.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(70, 52, 230);
+    color: red;
+}
+@keyframes victoire{
+    from{
+        font-size : 5vmin;
+        background-color: rgb(45, 214, 56);
+        color: blue;
+    }
+    to{
+        font-size : 7vmin;
+        background-color: rgb(70, 52, 230);
+        color: green;
+    }
+}
+@keyframes defaite{
+    from{
+        font-size:5vmin;
+        background-color: rgb(70, 52, 230);
+        color: red;
+    }
+    to{
+        font-size:5vmin;
+        background-color: red;
+        color:blue;
+    }
+}
+
+.lorem{
+    color:black;
+    font-size: 2vmin;
+    text-align: center;
+}
+
+.chauffe{
+    color:rgb(36, 47, 160);
+    font-size:5vmin;
+    text-align: center;
+}

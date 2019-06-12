@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="CSS/js_03.css" rel="stylesheet">
+    <title>Burning or Freezing !!</title>
+</head>
+
+<body>
+
+    <div class="grid">
+
+        <div class="titre">
+
+            <h1>Burning or Freezing !!</h1>
+
+        </div>
+
+        <div class="jeuExplicatif">
+
+            <p class="lorem">Bienvenue dans notre jeu Burning or Freezing! Le principe est simple, vous devez inscrire un nombre compris entre 1 et 100 dans la jolie petite case en dessous de ce texte et ensuite appuyer sur le jolie petit boutton. Un glaçon apparaîtra si vous êtes froid ou une flamme si vous êtes chaud!!! Et bien evidemment un feu d'artifice si vous gagnez!</p>
+
+            <input type="number" id="number" name="number" onkeypress="if(event.keyCode == 13) bouton()">
+
+            <button onclick = bouton() id="bouton">Appuyez</button>
+
+        </div>
+
+        <div class="hotOrCold"></div>
+
+    </div>
+
+
+    <script src="JS/js_03.js"></script>
+
+</body>
+
+</html>
